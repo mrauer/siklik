@@ -10,4 +10,10 @@ if sys.argv > 1:
         print ' '.join([str(num_symbols), 'symbols have been processed'])
 
     if 'action' in args and args['action'] == 'run':
-        print Siklik.get_single_stock('fb')
+        stock_list = Siklik.get_single_stock('HELE')
+        cycles_dict = Siklik.compute_cycles(stock_list)
+
+        # Eventually use clustering in 3D.
+        for key, value in cycles_dict.iteritems():
+            print str(key) + str(value)
+            break
