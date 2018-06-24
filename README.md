@@ -33,9 +33,9 @@ The first version V1.0 can be all built in Python 2.7.
 ## Versions
 
 #### 0.1
-* Virtualenv
-* API key/initial call
-* Module structure
+* ~~Virtualenv~~
+* ~~API key/initial call~~
+* ~~Module structure~~
 
 #### 1.0
 * Scale to 1K+ stocks
