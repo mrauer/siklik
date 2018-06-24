@@ -17,6 +17,7 @@ In a nutshell, the sofware will perform the following tasks:
 
 ## How to run it?
     python main.py '{"action":"update"}'
+    python main.py '{"action":"run"}'
 
 ## API endpoint sample
 
@@ -45,3 +46,4 @@ The first version V1.0 can be all built in Python 2.7.
 * Predicting model
 * Automation
 * Python 3
+* 3D clustering
