@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    working_directory:
+    docker:
+      - image: circleci/python:2.7.14
+    steps:
+      - run:
+          name: run tests
+          command: |
+            . siklikenv/bin/activate
+            mkdir test-reports
+            pytest --junitxml=test-reports/junit.xml
+
+      - store_test_results:
+          path: test-reports
+
+      - store_artifacts:
+          path: test-reports
