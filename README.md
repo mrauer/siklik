@@ -16,10 +16,16 @@ In a nutshell, the sofware will perform the following tasks:
 * For each stock, and for an increasing value **step**, compute the number of continuous positive variations **cycles**, and store the average increase as well **changeOverCycle**. (ex: for a step 30, if the number of cycles is 8, and the changeOverCycle value is 4.34%, then the stock has had a monthly continuous growth of 4.34% for 8 months)
 
 ## How to run it?
-    siklikenv/bin/python main.py '{"action":"update"}'
-    siklikenv/bin/python main.py '{"action":"run"}'
+    // Install the virtual environment
+    python -m virtualenv env
+    ./env/bin/pip install -r requirements.txt    
 
-    siklikenv/bin/pytest
+    // Run Sīklik
+    ./env/bin/python main.py '{"action":"update"}'
+    ./env/bin/python main.py '{"action":"run"}'
+
+    // Run the tests
+    ./env/bin/pytest
 
 ## API endpoint sample
 
