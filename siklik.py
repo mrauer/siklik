@@ -59,7 +59,8 @@ def compute_cycles(stock_dict):
                 if variation < 0:
                     has_negative = True
                 variations.append(variation)
-            except:
+            except Exception, e:
+                print e
                 break
         if not has_negative and len(variations) > 1:
             cycles_dict[j] = [j, len(variations),
